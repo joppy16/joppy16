@@ -1,0 +1,142 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: #f5f5f5;
+}
+
+.background-slider{
+  position: absolute;
+  /* top: 50%;
+  left: 47%; */
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(180deg, #9E9480, #DBCEB1);
+  z-index: -1;
+}
+
+.landing{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+#logo h1{
+  color: #f5f5f5;
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: 10;
+  transition: all .25s;
+}
+
+.logo-link{
+  text-decoration: none;
+}
+
+#logo{
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+nav{
+  height: 60px;
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header{
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero{
+  position: relative;
+  height: 80%;
+  width: 80%;
+  overflow: hidden;
+}
+
+.hero img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+
+.hero-slider{
+  position: absolute;
+  background-color: #736C5E;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.headline{
+  position:absolute;
+  color: black;
+  /* background-color: rgba(158, 148, 128); */
+  background-color: rgba(245, 245, 245, .8);
+  top: 65%;
+  left: 0;
+  mix-blend-mode: screen;
+  font-size: 100px;
+  visibility: hidden;
+
+}
+
+.social-buttons{
+  position: absolute;
+  left: 95%;
+  top: 30%;
+  height: 300px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30px;
+}
+
+.fa-chevron-down{
+  font-size: 35px;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+}
+
+i{
+  cursor: pointer;
+  color: #f5f5f5;
+  transition: all .25s;
+}
+
+i:hover, #logo h1:hover{
+  color: #39393A;
+}
+
+div.projects{
+  background: #DBCEB1;
+}
+
+div a{
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+}
